@@ -1,3 +1,17 @@
+[alias]
+  s = status
+  c = commit
+  a = add
+  l = log
+[user]
+	name = Will Myers
+	email = griffin.myers@gmail.com
+[push]
+	default = simple
+[core]
+    excludesfile = /Users/wmyers1/.gitignore
+[credential]
+    helper = osxkeychain
 [color]
     ui = auto
 [color "branch"]
@@ -14,17 +28,3 @@
     added = yellow
     changed = green
     untracked = cyan
-[user]
-    email = wmyers1@bloomberg.net
-    name = Will Myers
-[push]
-    default = current # `simple` if > git 2.0
-[core]
-    excludesfile = /Users/wmyers1/.gitignore
-[alias]
-    s = status
-    c = commit
-    a = add
-    l = log
-[credential]
-    helper = osxkeychain
