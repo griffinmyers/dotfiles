@@ -10,3 +10,4 @@ log/*
 Thumbs.db
 .idea/
 .sass-cache/
+npm-debug.log
