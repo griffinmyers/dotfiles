@@ -67,6 +67,11 @@ export NVM_DIR="/Users/williammyers/.nvm"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
+# virtualenv
+#
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 alias myip='ipconfig getifaddr en0'
 
 # Turn off auto cd
