@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/williammyers/.oh-my-zsh
+export ZSH=/Users/willmyers/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -77,3 +77,23 @@ alias myip='ipconfig getifaddr en0'
 # Turn off auto cd
 #
 unsetopt AUTO_CD
+
+export GOPATH="$HOME/go"
+export PATH=$PATH:/usr/local/go/bin
+
+function tomp3() {
+  if [ "$1" ]
+  then
+    find "$1" -name "*.flac" -exec ffmpeg -i {} -codec:a libmp3lame -q:a 0 -map_metadata 0 -id3v2_version 3 {}.mp3 \;
+  else
+    echo "Usage: tomp3 [directory]"
+  fi
+}
+
+alias myip='ipconfig getifaddr en0'
+
+export FZF_DEFAULT_OPTS="--preview '[[ \$(file --mime {}) =~ binary ]] && echo {} is a binary file || (highlight -O ansi -l {} || cat {}) 2> /dev/null | head -100' --prompt='› ' --color=bg+:-1,info:5"
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
