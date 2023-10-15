@@ -20,7 +20,7 @@
   excludesfile = /Users/wmyers/.gitignore
 
 [credential]
-  helper = osxkeychain
+  helper = /usr/local/share/gcm-core/git-credential-manager
 
 [color]
   ui = auto
