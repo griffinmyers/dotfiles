@@ -1,0 +1,7 @@
+[
+  { "keys": ["ctrl+option+command+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["ctrl+option+command+k"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["ctrl+option+command+down"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["ctrl+option+command+j"], "command": "select_lines", "args": {"forward": true} },
+  { "keys": ["command+k", "command+b"], "command": "toggle_side_bar" },
+]
